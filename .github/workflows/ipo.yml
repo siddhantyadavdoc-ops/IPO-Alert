@@ -2,7 +2,9 @@ name: IPO Alert
 
 on:
   schedule:
-    - cron: "30 3 * * *"   # 9:00 AM IST daily
+    - cron: "30 3 * * *"    # 9:00 AM IST
+    - cron: "30 6 * * *"    # 12:00 PM IST
+    - cron: "30 9 * * *"    # 3:00 PM IST
   workflow_dispatch:        # lets you run it manually
 
 jobs:
