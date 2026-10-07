@@ -37,7 +37,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # ---------------------------------------------------------------- settings --
-GMP_THRESHOLD_PCT = float(os.getenv("GMP_THRESHOLD_PCT", "1"))
+GMP_THRESHOLD_PCT = float(os.getenv("GMP_THRESHOLD_PCT", "20"))
 INCLUDE_SME = os.getenv("INCLUDE_SME", "true").strip().lower() in {"1", "true", "yes", "y"}
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "").strip()
